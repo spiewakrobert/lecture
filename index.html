@@ -54,10 +54,18 @@
 			$.scrollTo(0);
 			$('#link15').click(function() { $.scrollTo($('#zrodla'), 500); });
 
-
-		
+			$.scrollTo(0);
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+	
 		}
 		);
+
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		);	
 
 	</script>
 
@@ -68,6 +76,8 @@
 	<div id="logo">Wykład #1: Monitory komputerowe</div>
 
 	<div id="container">
+
+		<a href="#" class="scrollup"></a>
 
 		<div id="spis">
 
@@ -640,11 +650,12 @@
 				<li>Wikipedia.pl</li>
 			</ul>
 		</div>
-
-
-
 	</div>
-	
-	
+
+	<div class="center">
+		<p>2020 &copy; Robert Śpiewak Programista webowy zaprasza do wspópracy!
+			robertspiewak2@gmail.com</p>
+	  </div>
+	  
 </body>
 </html>

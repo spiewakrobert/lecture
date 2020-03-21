@@ -62,6 +62,29 @@ a:active
     border-right: 1px solid #cccccc;
 }
 
+
+.center {
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #485b3b; 
+    color: white;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 2px solid #33402a;
+    text-shadow: 
+    2px 2px 0 #33402a,
+    -2px 2px 0 #33402a,
+    -2px -2px 0 #33402a,
+    2px -2px 0 #33402a;
+    font-size: 18px;
+  }
+  
+  .center p {
+    line-height: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
 ol
 {
     margin-top: 5px;
@@ -121,4 +144,17 @@ h1
     font-size: 17px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.scrollup
+{
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+    
 }
